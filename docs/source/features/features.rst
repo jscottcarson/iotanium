@@ -107,8 +107,10 @@ Now, try to vary the sensor readings, and run each function again to see the val
 
 Next, try to read all the sensor values continuously.  Using the methods described above, you can vary the sensor readings in realtime, and watch them change in the WebREPL output::
 
+    >>> from time import sleep
     >>> while True:
     ...     iotanium.read_all()
+    ...     sleep(1)
     # press Enter 4 times
     {"touch": 382, "hall": 70, "temp": 132}
     {"touch": 382, "hall": 70, "temp": 132}
