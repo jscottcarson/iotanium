@@ -8,7 +8,7 @@ This walkthough assumes you have:
 - A working IoTanium Developer Kit
 - Succesfully completed the setup process for your device in section :doc:`../setup/setup`, and you are currently connected to your device via your WiFi and WebREPL session.
 - Downloaded or cloned the IoTanium repository
-- Privelged access to a **non-production** Amazon Web Services (AWS) account, which you can sign up for `here <√>`_.  
+- Privileged access to a **non-production** Amazon Web Services (AWS) account, which you can sign up for `here <√>`_.
 
 ----
 
@@ -19,6 +19,12 @@ Configure AWS IoT, and Download Certificates
 .. image:: ../img/AWS_Management_Console_IOT.png
     :align: center
     :alt: ../img/AWS_Management_Console_IOT.png
+    :width: 1024px
+
+- If you are shown the AWS IoT splash screen, click **Get started** to proceed to the Console
+.. image:: ../img/hello-world-cert0.png
+    :align: center
+    :alt: ../img/hello-world-cert0.png
     :width: 1024px
 
 - Once in the AWS IoT Console, navigate to **Secure >> Certificates** and click **Create**
