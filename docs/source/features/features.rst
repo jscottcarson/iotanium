@@ -40,7 +40,7 @@ The IoTanium Development board expands on the capabilities of the ESP32 chip, by
 4. External battery connector, and onboard charger
 5. LTE Cell modem ready
 6. Status LED
-7. Safe mode boot button
+7. Button
 8. 3 JST connectors, wired for I2C
 9. 30-pin breakout board/breadboard adapter, with pinout diagram
 10. Micro-USB port, which provides USB to serial and can power the board (not shown)
