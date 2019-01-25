@@ -23,10 +23,10 @@ Your IoTanium Development board is built around the powerful Esspresif ESP32 Mic
 - Controller Area Network (CAN) enabled
 - Ethernet MAC interface
 - Onboard sensors
-   - Capacative touch
+   - Capacitive touch
    - Temperature
    - Hall effect
-- Operating temp range: -40ºC to 125ºC
+- Operating temperature range: -40ºC to 125ºC
 
 ----
 
@@ -39,7 +39,7 @@ The IoTanium Development board expands on the capabilities of the ESP32 chip, by
 3. Barrel jack power connector
 4. External battery connector, and onboard charger
 5. LTE Cell modem ready
-6. STATUS LED
+6. Status LED
 7. Button
 8. 3 JST connectors, wired for I2C
 9. 30-pin breakout board/breadboard adapter, with pinout diagram
@@ -137,7 +137,7 @@ The following functions are also supported, but are not used in this walkthrough
 
 Safe Mode Boot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-While unlikely, there are some failure modes that could make it difficult for a user to connect to thier board to troubleshoot.  Some of these scenarios include, but are not limited to:
+While unlikely, there are some failure modes that could make it difficult for a user to connect to their board to troubleshoot.  Some of these scenarios include, but are not limited to:
 
 - Running code that spawn resource intensive `tight loops`, that cause the WebREPL to be slow or unresponsive.
 
