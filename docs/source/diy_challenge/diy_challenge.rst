@@ -1,5 +1,5 @@
 05 - DIY IoT Challenge!
-==============
+========================
 
 Now its time to test your IoT skills, and see if you can build a working end-to-end IoT solution that will measure **temperature, humidity, and light levels**, and send that data from your IoTanium board to AWS using MQTT.
 

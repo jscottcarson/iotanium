@@ -1,5 +1,5 @@
 01 - Setting up your IoTanium DevKit
-==============
+====================================
 
 Prerequisites
 --------------------- 
@@ -26,25 +26,27 @@ Unboxing and Assembly
     :alt: img/assembly.png
 
 - Power your device with the micro-usb cable provided to the micro-usb port on the IoTanium board.  You can use any standard USB port, or the USB wall adapter provided.
+
 ----
 
 Download or Clone Repository
---------------------- 
+-----------------------------
 - **Direct Download**
     - Download the IoTanium Git repository `here <https://github.com/onicagroup/iotanium/archive/lab.zip>`_.
     - Unzip the downloaded file on your local workstation
 - **Git Clone**
     - Git users can clone the repository directly: ``git clone -b lab https://github.com/onicagroup/iotanium.git``
+
 ----
 
 Connect to Your Device
----------------------
+-----------------------
 You IoTanium development board comes pre-flashed with an optimized version of `Micropython <http://micropython.org/>`_, a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library, and is optimised to run on microcontrollers and in constrained environments.  Python utilizes a interactive 'Read-Evaluate-Print-Loop' (REPL) as a programming interface, which takes single user inputs or expressions, evaluates them, and returns the results to the user.  The REPL provides an interactive ``>>>`` prompt when working with Python directly in a command line terminal.
 
 Your IoTanium device supports a version of the Python REPL called the WebREPL, which can be used to interact with the device in a web browser over WiFi.  The section below will cover configuring your device for your local WiFi network, and connecting to your device via the WebREPL:
 
 1 - Enable the IoTanium Access Point, and Connect
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Find the small rectangular LED labelled `STATUS`, it is located just above the blue button on the IoTanium device.  The STATUS LED is used to indicate when the device enters Access Point (AP mode), which will allow your workstation to connect to the device via WiFi.
 - Briefly unplug the power from the device, and plug it back in.  After a moment, the STATUS LED will blink rapidly for 5 seconds, indicating AP mode.
 - On the back of your IoTanium Developer board, you will find a label with yoour board's MAC Address, that you would have noted in an earlier step.  Your board's Access Point (AP) network SSID will be ``IoTanium-<MAC ADDRESS>``>.
@@ -114,7 +116,7 @@ Your IoTanium device supports a version of the Python REPL called the WebREPL, w
 - Copy the WebREPL target value from your console output, similar to ``ws://192.168.1.243:8266/``, being careful to include the ``ws://`` and the trailing ``/``. Note that your output will be a similar format, but a different address.  **IMPORTANT: Losing this value will require entering Safe Mode, and repeating steps 2-4!**, so consider saving this value in a text file to avoid having to repeat the steps above.
 
 5 - Connect to the WebREPL over WiFi
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Click the **Disconnect** button in the WebREPL browser window.
 - Disconnect your workstation from the ``IoTanium-<MAC ADDRESS>`` wireless network.
 - Reconnect your workstation to your local WiFi network.  **Note: this must be the same network SSID that you just uploaded to the IoTanium board.  Connecting your workstation to a different SSID will cause you to be unable to reach your IoTanium board to connect below.**
