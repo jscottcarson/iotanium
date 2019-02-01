@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'IoTanium'
-copyright = u'2018, Onica Group'
+copyright = u'2019, Onica Group'
 author = u'Onica Group'
 
 # The short X.Y version
