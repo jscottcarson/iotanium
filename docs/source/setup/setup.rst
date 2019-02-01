@@ -30,8 +30,8 @@ Unboxing and Assembly
 
 ----
 
-Download or Clone Repository
------------------------------
+Download or Clone IoTanium Repository
+-------------------------------------
 - **Direct Download**
     - Download the IoTanium Git repository `here <https://github.com/onicagroup/iotanium/archive/lab.zip>`_.
     - Unzip the downloaded file on your local workstation
@@ -65,7 +65,7 @@ Your IoTanium device supports a version of the Python REPL called the WebREPL, w
     Welcome to MicroPython!
     Password:
     WebREPL connected
-    >>>
+    >>
 
 3 - Upload WiFi Settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,7 +99,7 @@ Your IoTanium device supports a version of the Python REPL called the WebREPL, w
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - In the WebREPL console, run ``iotanium.setup()`` and observe the output, similar to that below::
 
-     >>> iotanium.setup()
+    >> iotanium.setup()
     config file ./iotanium_cfg.json found
     wifi scanning
     found wlan ATT288-5G
@@ -108,7 +108,7 @@ Your IoTanium device supports a version of the Python REPL called the WebREPL, w
     1. reconnect your workstation to wifi network: ATT288-5G
     2. once reconnected, connect to webrepl on:
     ws://192.168.1.243:8266/
-    >>>
+    >>
 
 - Copy the WebREPL target value from your console output, similar to ``ws://192.168.1.243:8266/``
 
@@ -129,4 +129,4 @@ Your IoTanium device supports a version of the Python REPL called the WebREPL, w
     Welcome to MicroPython!
     Password: <masked>
     WebREPL connected
-    >>>
+    >>

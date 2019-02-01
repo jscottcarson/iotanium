@@ -3,7 +3,9 @@
 
 ESP32 Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Your IoTanium Development board is built around the powerful Esspresif ESP32 Microcontroller Unit (MCU).  The ESP32 chip is small and affordable, with features that are perfectly suited for a broad range of IoT applications. The ESP32 is equipped with GPIO pins, and includes support for a variety of protocols like SPI, I2C, UART, and more. One key feature of the ESP32 is that both wireless networking and Bluetooth are included onboard the MCU itself.  This sets the ESP apart from other microcontrollers like those found on boards like Arduino and Rasberry Pi, for which WiFi and Bluetooth require additional onboard components, or add on hardware. This means that you can easily control and monitor an ESP32 based devices remotely without the need for additional WiFi or Bluetooth components.
+Your IoTanium Development board is built around the powerful Esspresif ESP32 Microcontroller Unit (MCU).  The ESP32 chip is small and affordable, with features that are perfectly suited for a broad range of IoT applications. The ESP32 is equipped with GPIO pins, and includes support for a variety of protocols like SPI, I2C, UART, and more.
+
+One key feature of the ESP32 is that both wireless networking and Bluetooth are included onboard the MCU itself.  This sets the ESP apart from other microcontrollers like those found on boards like Arduino and Rasberry Pi, for which WiFi and Bluetooth require additional onboard components or add on hardware. This means that you can easily control and monitor ESP32-based devices remotely without the need for additional WiFi or Bluetooth components.
 
 .. image:: ../img/esp32-chip.png
     :align: center
@@ -23,6 +25,7 @@ Your IoTanium Development board is built around the powerful Esspresif ESP32 Mic
 - Controller Area Network (CAN) enabled
 - Ethernet MAC interface
 - Onboard sensors
+
    - Capacative touch
    - Temperature
    - Hall effect
@@ -59,7 +62,7 @@ The IoTanium Development board expands on the capabilities of the ESP32 chip, by
 
 Convenience Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Your IoTanium board includes a number of convenience functions, which are baked into the ``iotanium`` module of the Micropython firmware.  These functions allow you to easily interact with the sensors of the ESP32, as well as some hardware features of the board.  In this section, we will walk through the convenience functions that are available.  
+IoTanium boards include a number of convenience functions baked into the ``iotanium`` module of the Micropython firmware.  These functions allow developers to easily interact with the sensors of the ESP32 as well as some hardware features of the board.  In this section, we will walk through the convenience functions that are available.  
 
 This section assumes you have:
 
@@ -78,39 +81,41 @@ Below are descriptions of the the available convenience functions:
 
 Using the WebREPL console terminal, you can experiment with the different functions above.    Here are some examples::
 
-    >>> iotanium.led('on')
+    >> iotanium.led('on')
     # STATUS LED turns on
 
-    >>> iotanium.led('off')
+    >> iotanium.led('off')
     # STATUS LED turns off
 
-    >>> iotanium.blink(500, 10)
+    >> iotanium.blink(500, 10)
     # STATUS LED blinks every 500 milliseconds, for 10 seconds
 
-    >>> iotanium.hall()
+    >> iotanium.hall()
     73
 
-    >>> iotanium.temp()
+    >> iotanium.temp()
     131
 
-    >>> iotanium.touch()
+    >> iotanium.touch()
     375
 
-    >>> iotanium.read_all()
+    >> iotanium.read_all()
     {"touch": 375, "hall": 69, "temp": 131}
 
 Now, try to vary the sensor readings, and run each function again to see the values change.  Examples:
 
-- Place the IoTanium board in a warm place, in direct sunlight, or touch the metal MCU case with your hand to change the ``temp()`` reading (it will change *very* little due to the low resolution of the onboard temp sensor)
+- Place the IoTanium board in a warm place, in direct sunlight, or touch the metal MCU case with your hand to change the ``temp()`` reading.
+
+    - Note: it will change *very* little due to the low resolution of the onboard temp sensor
 - Place a magnet near the MCU chip, and see the ``hall()`` reading change.
-- Insert a jumper wire into the breadboard, next to pin12 on the IoTanium breakout board.  Touch the free end of the jumper with you finger, and see the ``touch()`` reading change.
+- Insert a jumper wire into the breadboard next to pin12 on the IoTanium breakout board.  Touch the free end of the jumper with your finger, and see the ``touch()`` reading change.
 
 Next, try to read all the sensor values continuously.  Using the methods described above, you can vary the sensor readings in realtime, and watch them change in the WebREPL output::
 
-    >>> from time import sleep
-    >>> while True:
-    ...     iotanium.read_all()
-    ...     sleep(1)
+    >> from time import sleep
+    >> while True:
+    ..     iotanium.read_all()
+    ..     sleep(1)
     # press Enter 4 times
     {"touch": 382, "hall": 70, "temp": 132}
     {"touch": 382, "hall": 70, "temp": 132}
@@ -118,13 +123,12 @@ Next, try to read all the sensor values continuously.  Using the methods describ
     {"touch": 382, "hall": 71, "temp": 132}
     ...
     ...
-    ...
 
-    # CTRL + C to break
+    # Ctrl+C to break
     Traceback (most recent call last):
     File "<stdin>", line 2, in <module>
     KeyboardInterrupt: 
-    >>> 
+    >> 
 
 
-Note that on-chip sensor readings are not calibrated to any particular scale, nor are they expected to be terribly consistent from device to device.  For example, the temperature reading is just a raw sensor value, it does not map directly to an actual temperature value.  For more reliable readings, we will use more accurate sensors in a later section.
+Note that on-chip sensor readings are not calibrated to any particular scale, nor are they expected to be terribly consistent from device to device.  For example, the temperature reading is just a raw sensor value, it does not map directly to an actual temperature value.  For more reliable readings, we will use more accurate sensors in the next section.
