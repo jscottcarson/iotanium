@@ -1,5 +1,5 @@
 02 - IoT `Hello World` on AWS
-==============
+==============================
 
 The intent of this section is to go from zero to a working IoT project in just a few minutes and a few simple lines of code.  Emphasis is on simplicity and getting your IoTanium DevKit sending IoT data as quickly as possible, without slowing down to examine what is happening under the hood.  In later sections, we will dive deeper into the underlying functionality demonstrated here.
 
@@ -8,7 +8,7 @@ This walkthough assumes you have the prerequisites, succesfully completed the as
 ----
 
 Add Config Values to `hello_world.py`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - In your IoTanium repository, navigate to ``hello_world.py`` in the root directory, and open that file in a text editor.
 - Edit the lines below, replacing the values with the correct values.  **all values are 100% lower case exactly as shown**::
 
@@ -21,7 +21,7 @@ Add Config Values to `hello_world.py`
 
 
 Upload files to your IoTanium device
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Back in the WebREPL session in your browser, ensure your session is still active. Place your cursor in the REPL console, and press the **Enter** key several times.  If your session is active, each press should return a Python REPL prompt ``>>>``.  If not, click **Disconnect**, refresh the page, and reconnect as before.  Do not proceed until your WebREPL sesssion is active.
 
 - Using the same **Choose File>>Send to device** method that you used during Setup to upload your WiFi connection info, transfer the following three files one at a time to the device:
