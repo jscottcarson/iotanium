@@ -74,6 +74,6 @@ Back in your WebREPL session, run the following commands to interact with the li
     4095
     >>> 
 
-Notice that we are using the ESP32's onboard `Analog to Digital <https://en.wikipedia.org/wiki/Analog-to-digital_converter>`_ capabilies.  The photocell is an analog sensor, so we need to convert its reading to a digital value to use in code.
+Notice that we are using the ESP32's onboard `Analog to Digital <https://en.wikipedia.org/wiki/Analog-to-digital_converter>`_ capabilities.  The photocell is an analog sensor, so we need to convert its reading to a digital value to use in code.
 
 Experiment with covering up the photocell with your hand, and taking the reading again.  What do you observe?
