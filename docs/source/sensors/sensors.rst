@@ -7,7 +7,7 @@ Locate the small bag of components included with your IoTanium DevKit.  **Note: 
 
 - The lower portion of your IoTanium hardware is a breadboard adapter.  In order for the lab wiring diagrams to work as expected, your breadboard adapter must be oriented correctly on the breadboard.  To do so, **ensure that pin 2 on the breadboard adapter is inserted in hole E1 on the breadboard, and pin 15 on the breadboard adapter is inserted in hole F1 on the breadboard (see diagram below).**
 - Locate the blue DHT-11 sensor, and turn it so the holes are facing you.  Insert the four wires into holes E20 - E23 on the breadboard.
-- Locate a 10K ohm resistor.  It will be light brown with brown, black, orange, and gold bands.  Connect one end to hole B21, and the other end to any free hole on the red (+) rail on the breadboard.  This is a 'pullup' resistor that will make the DHT11 readings more reliable.
+- Locate a 4.7K ohm resistor (light brown with yellow, violet, red, and gold bands).  Connect one end to hole B21, and the other end to any free hole on the red (+) rail on the breadboard.  This is a 'pullup' resistor that will make the DHT11 readings more reliable.
 - With jumper wires, make the following connections:
    - A20 to any free hole on the red (+) rail.  This provides power to the DHT11.
    - C21 to C3.  This connects the 'data' pin on the DHT 11 to the input pin 4 on the IoTanium.
@@ -50,7 +50,7 @@ Locate the photocell in the bag of components.  It has two long legs, and a wavy
    - The connection between H15 and the blue (-) rail.
 
 - Connect your photocell to E28 and E30.  The component does not have a polarity, so it can be connected either way.
-- Locate another 10K ohm resistor (light brown with brown, black, orange, and gold bands).  Connect it between C28 and any free hole on the blue (-) rail.  This is a `pulldown` resistor to limit the current of the photocell to a controlled range, and provide a path to ground.
+- Locate another 4.7K ohm resistor (light brown with yellow, violet, red, and gold bands).  Connect it between C28 and any free hole on the blue (-) rail.  This is a `pulldown` resistor to limit the current of the photocell to a controlled range, and provide a path to ground.
 - With jumper wires, make the following connections:
    - D30 to any free hole on the red (+) rail. This will power the photocell.
    - D28 to H13.  This will connect the output side of the photocell to pin 36 on the dev board.
