@@ -13,9 +13,9 @@ Add Config Values to `hello_world.py`
 - Edit the lines below, replacing the values with the values provided by your lab instructor.  **All values are 100% lower case**::
 
     # config
-    thing_id = 'team_name' #all lowercase, _ separator, no special chars
-    company_name = 'your_company_name'
-    endpoint = 'aws_iot_endpoint_dns_hostname'
+    thing_id = 'team_name'                     # choose a team name: all lowercase, _ separator, no special chars
+    company_name = 'aws'                       # always use 'aws' here.
+    endpoint = 'aws_iot_endpoint_dns_hostname' # find this in labinfo.txt
 
 - **Save** the file, and close the text editor.
 
