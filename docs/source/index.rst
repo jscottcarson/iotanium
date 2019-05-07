@@ -18,3 +18,4 @@ Onica IoTanium Developer Kit Lab
    features/features
    sensors/sensors
    hints/hints
+   diy_challenge/diy_challenge
